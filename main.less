@@ -49,6 +49,7 @@ html,body{
 #main{
 
     //**********************Header styles**************************************
+    @import-once "../../../protected/views/site/site.less";
     .bg-header{
         padding-bottom: 100px;
         padding-top: 50px;
@@ -949,7 +950,7 @@ html,body{
                         border-top: 7px solid #333;
                         bottom:-7px;
                         left:30px;
-                        }
+                    }
                 }
             }
             background: #efefef;
@@ -1018,7 +1019,8 @@ html,body{
             }
         }
 
-        }// END.content_main_blog
+    }// END.content_main_blog
+
     .container-fluid{margin: 0px;padding: 0px;}
 
     #panel{
@@ -1072,6 +1074,7 @@ html,body{
                 background-position: 0 center;
              }
          }
+
          .bg-commercials_buttons_menu{
             background: #f2f2f2;
             margin:0 30px 0 30px;
@@ -1084,7 +1087,7 @@ html,body{
                 padding-bottom: 20px;
                 background: #fff;
 
-                 p{
+                p{
                     color:#666666;
                     font-size: 12px;
                     padding: 10px 0 0 15px;
@@ -1095,7 +1098,7 @@ html,body{
                     font-weight: bold;
                 }
             }
-         }
+         } // END .bg-commercials_buttons_menu
 
          .well, .nav,.commercials_buttons_menu{
             margin-right: 30px;
@@ -1136,7 +1139,7 @@ html,body{
                     padding-left: 10px;
                 }
             }
-         }
+         } // END .commercial-item
 
          .row{margin: 0;}
 
@@ -1154,7 +1157,7 @@ html,body{
                     width: 95%;
                 }
             }
-        }
+        } // END .commercial-form
 
         .create_commercials{
             position:relative;
@@ -1182,7 +1185,7 @@ html,body{
                 font-size: 14px;
                 padding-top: 30px;
             }
-        }
+        } // END .create_commercials
 
         .refferalView{
             display: table;
@@ -1238,9 +1241,9 @@ html,body{
                 H2{display: inline-block; padding-right: 10px;margin-top: 0;}
 
             }
-        }
+        } // END #groups-display
 
-    }
+    } // END .panel
     
 
     footer {
@@ -1348,10 +1351,9 @@ html,body{
 
                INPUT[type='submit']{.green-button;}
             }
-        }
-    }
-
-}
+        } // END .inline-block
+    } // END #login-page
+} // END #main
 
 .error{
     INPUT, TEXTAREA, SELECT{
@@ -1407,6 +1409,7 @@ html,body{
 .pic{
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
     &.blog_logo{background-image: url(image/blog_logo.png)}
     &.blog-big{background-image: url(image/blog.png)}
     &.euro{background-image: url(image/euro_sign.png)}
